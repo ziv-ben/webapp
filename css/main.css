@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #000 url("../img/body-background.jpg") no-repeat;
+    background-size: cover;
+
+    min-height: 1000px;
+}
+
+header{
+    background-color: #000;
+}
+
+.search-box { float : right; }
+
+.layout-wrap {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.page-body {
+    background-color: gray;
+}
+.notifications {
+    background-color: lightgray;
+    height: 25px;
+    margin-bottom: 30px;
+}
+
+.nav-section {
+    display: inline-block;
+    vertical-align: top;
+    width:32%;
+    height: 200px;
+    /*overflow: hidden;*/
+    color: white;
+    margin-right: 2%;
+    position: relative;
+}
+.nav-section:last-child{
+    margin-right: 0;
+}
+
+.nav-section > p{
+    text-align: center;
+    font-size: 1.5rem;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.menu{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: lightgray;
+    color: #000;
+
+}
+
+.menu-caption a{
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+}
+.menu-caption:hover ~.action-list {
+    display:block;
+}
+
+.action-list {
+    top: 40px;
+    position: absolute;
+    width: 100%;
+    border: 1px solid red;
+    left: 0;
+    margin: 0;
+    display: none;
+}
+
+.arrow {
+    background-color: red;
+    width:30px;
+    height:20px;
+    content: "\25BA";
+}
+
+.tabs > ul > li  {
+    display: inline-block;
+    width: 22%;
+    height: 30px;
+    margin: 1%;
+    background-color: rgba(0, 0, 0, 0.3);
+    list-style: none;
+    text-align: center;
+}
+.tabs li a {
+    text-decoration: none;
+    color: black;
+}
+
+.tabs > div{
+    display: none;
+    background: white;
+}
+
+#my-folders { position : relative ;}
+
+#my-folders a { position: absolute ;  /*position of the arrow icon*/
+                   top : 0 ;
+                   left: 1160px;}
+
+#public-folders { position: relative;}
+
+#public-folders a { position: absolute ;  /*position of the arrow icon*/
+    top : 0 ;
+    left: 1160px;}
+
+form > p {background: lightgray;
+          padding: 10px;}
+
+
+form > p:last-child {
+    background: white ;
+    padding: 0;
+}
+
