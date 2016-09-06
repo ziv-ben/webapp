@@ -21,7 +21,9 @@
 	</header>
 
 	<section class="page-body layout-wrap">
-		<div class="notifications"></div>
+		<div class="notifications">
+
+		</div>
 
 		<nav>
 			<div class="nav-section" style="background: #000 url('img/icons/action-report-new.png') no-repeat center 100px;">
@@ -84,26 +86,37 @@
 			</ul>
 
 			<div id="quick-reports">
-				<select id="reports_list">
 
-				</select>
-				<form >
-					<p>Report 01 <label for = 'report_01_name'>Name </label><input type="text" id="report_01_name" placeholder="enter a Name">
-					 <label for = 'report_01_url'>Url   </label><input type="text" id="report_01_url" placeholder="enter a URL"></p>
+				<div class="toggle-reports-wrapper">
+					<a href="#" id="toggle-reports-settings"><img src="img/icons/settings.png"></a>
+				</div>
 
-					<p>Report 02 <label for = 'report_02_name'>Name  </label><input type="text" id="report_02_name" placeholder="enter a Name">
-					 <label for = 'report_02_url'>Url   </label><input type="text" id="report_02_url" placeholder="enter a URL"></p>
+                <div id="reports-settings">
+                    <select id="reports_list">
 
-					<p>Report 03 <label for = 'report_03_name'>Name  </label><input type="text" id="report_03_name" placeholder="enter a Name">
-					 <label for = 'report_03_url'>Url   </label><input type="text" id="report_03_url" placeholder="enter a URL"></p>
+                    </select>
 
-					<p><input  type="submit" value="save" id="save_reports"><input  type="button" value="cancel" ></p>
+					<!--defining the form-->
 
-				</form>
-				<a href="http://www.netcraftacademy.co.il" target="_blank"><img src="img/icons/settings.png" ></a>
-				<a href="http://www.netcraftacademy.co.il" target="_blank"><img src="img/icons/expand.png" ></a>
+                    <form >
+                        <p>Report 01 <label for = 'report_01_name'>Name </label><input type="text" id="report_01_name" placeholder="enter a Name">
+                         <label for = 'report_01_url'>URL   </label><input type="url" id="report_01_url" required="required" placeholder="enter a URL"></p>
 
-				<div id="quick-reports-iframe">
+                        <p>Report 02 <label for = 'report_02_name'>Name  </label><input type="text" id="report_02_name" placeholder="enter a Name">
+                         <label for = 'report_02_url'>URL   </label><input type="url" id="report_02_url" required="required" placeholder="enter a URL"></p>
+
+                        <p>Report 03 <label for = 'report_03_name'>Name  </label><input type="text" id="report_03_name" placeholder="enter a Name">
+                            <label for = 'report_03_url'>URL  </label><input type="url" id="report_03_url" required="required" placeholder="enter a URL"></p>
+
+                            <input type="submit" value="save" class="black" id="save_reports">
+                            <input  class="cancel" type="button" id="cancel_reports" value="cancel" >
+                            <div class="clearfix"> </div>
+
+
+                    </form>
+                </div>
+
+                <div id="quick-reports-iframe">
 
 				</div>
 			</div>
@@ -115,29 +128,41 @@
 			</div>
 
 			<div id="my-team-folders">
-				<select id="folders_list">
 
-				</select>
-				<form >
-					<p>Report 01 <label for = 'folders_01_name'>Name </label><input type="text" id="folders_01_name" placeholder="enter a Name">
-						<label for = 'folders_01_url'>Url   </label><input type="text" id="folders_01_url" placeholder="enter a URL"></p>
+				<div class="toggle-folders-wrapper">
+					<a href="#" id="toggle-folders-settings"><img src="img/icons/settings.png"></a>
+				</div>
 
-					<p>Report 02 <label for = 'folders_02_name'>Name  </label><input type="text" id="folders_02_name" placeholder="enter a Name">
-						<label for = 'folders_02_url'>Url   </label><input type="text" id="folders_02_url" placeholder="enter a URL"></p>
+					<div id="folders-settings">
 
-					<p>Report 03 <label for = 'folders_03_name'>Name  </label><input type="text" id="folders_03_name" placeholder="enter a Name">
-						<label for = 'folders_03_url'>Url   </label><input type="text" id="folders_03_url" placeholder="enter a URL"></p>
+						<select id="folders_list">
 
-					<p><input  type="submit" value="save" id="save_folders"><input  type="button" value="cancel" ></p>
+						</select>
 
-				</form>
-				<a href="http://www.netcraftacademy.co.il" target="_blank"><img src="img/icons/settings.png" ></a>
-				<a href="http://www.netcraftacademy.co.il" target="_blank"><img src="img/icons/expand.png" ></a>
+						<!--defining the form-->
 
+						<form >
+							<p>Report 01 <label for = 'folders_01_name'>Name </label><input type="text" id="folders_01_name" placeholder="enter a Name">
+								<label for = 'folders_01_url'>URL   </label><input type="text" id="folders_01_url" placeholder="enter a URL"></p>
+
+							<p>Report 02 <label for = 'folders_02_name'>Name  </label><input type="text" id="folders_02_name" placeholder="enter a Name">
+								<label for = 'folders_02_url'>URL   </label><input type="text" id="folders_02_url" placeholder="enter a URL"></p>
+
+							<p>Report 03 <label for = 'folders_03_name'>Name  </label><input type="text" id="folders_03_name" placeholder="enter a Name">
+								<label for = 'folders_03_url'>URL   </label><input type="text" id="folders_03_url" placeholder="enter a URL"></p>
+
+
+								<input type="submit" value="save" class="black" id="save_folders">
+								<input  class="cancel" type="button" id="cancel_folders" value="cancel" >
+							    <div class="clearfix"> </div>
+
+
+						</form>
+
+					</div>
 				<div id="my_folders-iframe">
 
 				</div>
-
 			</div>
 
 			<div id="public-folders">
