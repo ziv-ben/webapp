@@ -110,13 +110,14 @@ $( document ).ready(function() {
         $('#report_03_url').val(report_03_url);
     }
 
-    
-    //creating the iframe with the selected  webpage
+
+    // Bind change event to the SELECT element and load the iframe with the selected webpage
     $( "#reports_list" ).change(function() {
         var url = $(this).val() ;
         $("#quick-reports-iframe").html('<iframe src="' + url +  '" width="100%" height="800px" name="netcraft"></iframe>');
 
-        // <a href="#" target="_blank">utyyt</a> - prevent multiple arrows
+        // check if the expand_link exist
+        //if exist change href attribute to the new url
         if($("#expand_link").length ){
             $("#expand_link").attr('href', url );
         } else {
